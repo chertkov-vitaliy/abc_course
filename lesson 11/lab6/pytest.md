@@ -149,7 +149,7 @@ def test_is_even(calc, n, expected):
     assert calc.is_even(n) is expected
 ```
 
-### ▶Проверка
+### Проверка
 
 ```bash
 pytest -v                    # все тесты
@@ -163,7 +163,7 @@ pytest --cov=calculator      # с покрытием
 
 ## Часть 3. GitHub Actions 
 
-### 📄 `.github/workflows/tests.yml`
+### `.github/workflows/tests.yml`
 
 ```yaml
 name: Tests
@@ -238,24 +238,9 @@ git push -u origin main
 ---
 
 ## Часть 5. Итоговое задание (5 мин)
+1. Для игры "Поле чудес" сгенерировать покрытие тестами и проверку на
+   Github Action
 
-1. 
----
-
-## 📊 Критерии оценки
-
-| Критерий | Баллы |
-|---|---|
-| Виртуальное окружение создано и активировано | 1 |
-| Зависимости установлены из `requirements.txt` | 1 |
-| Все тесты проходят локально (`pytest -v`) | 3 |
-| Параметризация работает | 2 |
-| Фикстура `calc` в `conftest.py` | 1 |
-| Маркер `smoke` работает без warning'ов | 2 |
-| Workflow на GitHub Actions зелёный | 4 |
-| Матрица версий Python (3 шт.) | 2 |
-| Покрытие (`--cov`) отображается | 2 |
-| **Итого** | **19** |
 
 ---
 
